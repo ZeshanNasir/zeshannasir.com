@@ -1,0 +1,36 @@
+# ==============================================================================
+# Cloudflare Tunnel Configuration Template (Zero Trust / Argo Tunnel)
+# File: /etc/cloudflared/config.yml
+# Note: Replace <TUNNEL_UUID> with your actual tunnel UUID from:
+#       cloudflared tunnel create omega-web
+# ==============================================================================
+
+tunnel: 00000000-0000-0000-0000-000000000000
+credentials-file: /etc/cloudflared/00000000-0000-0000-0000-000000000000.json
+metrics: 127.0.0.1:2000
+no-autoupdate: true
+
+ingress:
+  # Primary Canonical Site (Apex)
+  - hostname: zeshannasir.com
+    service: http://127.0.0.1:8080
+    originRequest:
+      connectTimeout: 10s
+      noTLSVerify: false
+      httpHostHeader: zeshannasir.com
+
+  # Canonical WWW Alias
+  - hostname: www.zeshannasir.com
+    service: http://127.0.0.1:8080
+    originRequest:
+      connectTimeout: 10s
+      httpHostHeader: zeshannasir.com
+
+  # Future Subdomain Expansion (Protected behind CF Access if desired)
+  # - hostname: lab.zeshannasir.com
+  #   service: http://192.168.20.24:3000
+  # - hostname: status.zeshannasir.com
+  #   service: http://192.168.20.11:3001
+
+  # Catch-all status responder for unmatched incoming hosts
+  - service: http_status:404

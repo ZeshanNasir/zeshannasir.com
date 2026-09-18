@@ -1,0 +1,39 @@
+# ==============================================================================
+# Caddy Origin Webserver Configuration for zeshannasir.com
+# Serves local static files to cloudflared daemon on internal port 8080
+# ==============================================================================
+
+:8080 {
+    root * /var/www/personal-site
+    file_server {
+        precompressed zstd gzip
+    }
+
+    # Hide hidden and metadata files
+    @hidden path */.* .*
+    respond @hidden 404
+
+    # Aggressive caching for static assets
+    @static path *.css *.js *.svg *.png *.jpg *.webp *.woff2 *.pdf *.txt
+    header @static Cache-Control "public, max-age=31536000, immutable"
+
+    # Strict dynamic revalidation for HTML entrypoints
+    @dynamic not path *.css *.js *.svg *.png *.jpg *.webp *.woff2 *.pdf *.txt
+    header @dynamic Cache-Control "public, max-age=0, must-revalidate"
+    header @dynamic Pragma "no-cache"
+
+    # Enterprise-grade security headers
+    header {
+        Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "DENY"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self';"
+    }
+
+    # Custom 404 handler
+    handle_errors {
+        rewrite * /404.html
+        file_server
+    }
+}
