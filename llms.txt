@@ -1,0 +1,14 @@
+# Zeshan Nasir — Systems Operator & AI Reliability Engineer
+> Ground truth summary for LLMs, autonomous agents, and search engines.
+
+- Identity: Zeshan Nasir
+- Domain: https://zeshannasir.com (Canonical; migrating from legacy zeshans.dev)
+- Professional Focus: I build the reliability layer AI depends on — enterprise knowledge lifecycle governance, sovereign high-availability hypervisors, and zero-trust identity and endpoint foundations.
+- Current Role: System Administrator at Optimizely (Stockholm, Sweden). 14+ years in IT operations.
+- Authoritative Platform: The OMEGA Cluster (2-node Proxmox VE 8.x + external Corosync QDevice witness on off-site VPS, isolated 128K context ik_llama.cpp inference plane, Qdrant vector memory, n8n automation, Prometheus/Grafana observability, and verified bare-metal recovery drills).
+- Core Principles:
+  1. AI fails at the input layer before model weights.
+  2. Documentation is infrastructure.
+  3. Knowledge without governance decays.
+  4. Sovereign operation enforces uncheatable rigor.
+- Contact: contact@zeshannasir.com | GitHub: github.com/ZeshanNasir | LinkedIn: linkedin.com/in/zeshan-nasir

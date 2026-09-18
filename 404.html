@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Record Not Found · Zeshan Nasir</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .error-hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .error-box {
+      max-width: 540px;
+      padding: var(--space-2xl);
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: 3.5rem;
+      font-weight: var(--weight-bold);
+      color: var(--accent-teal);
+      line-height: 1;
+      margin-bottom: var(--space-md);
+    }
+  </style>
+</head>
+<body>
+  <main class="error-hero">
+    <div class="error-box">
+      <div class="error-code">404</div>
+      <h2>Operational Record Not Found</h2>
+      <p style="margin-top: 1rem; margin-bottom: 2rem;">
+        The requested URI does not exist in the routing table. If you followed a legacy link from <code>zeshans.dev</code>, please return to the root canonical index.
+      </p>
+      <a href="/" class="btn btn--primary">Return to Canonical Site</a>
+    </div>
+  </main>
+</body>
+</html>
