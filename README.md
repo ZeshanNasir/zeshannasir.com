@@ -3,11 +3,8 @@
 Source for the personal site of **Zeshan Nasir** — system administrator in Stockholm,
 working on infrastructure reliability, enterprise knowledge governance and self-hosted AI.
 
-> **Status: prepared, not live.**
-> The site currently served at `zeshans.dev` is built from a different repository
-> (`~/portfolio`). This repository holds the rebuilt site and the migration plan that
-> moves the identity to `zeshannasir.com`. That cutover has **not** been performed:
-> `zeshannasir.com` has no DNS records yet.
+> **Status: Live in production.**
+> Canonical public site deployed at `https://zeshannasir.com` on edge VPS Caddy, with path-aware 301 legacy redirects active from `zeshans.dev`.
 
 ## Architecture
 
