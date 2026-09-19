@@ -142,7 +142,21 @@
     });
   });
 
-  // --- 5. DYNAMIC YEAR ---
+  // --- 5. SMOOTH SCROLL TO TOP (CLEAN URL - ZERO HASH POLLUTION) ---
+  const topTriggers = document.querySelectorAll('.site-brand, .footer-back-to-top');
+  topTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '') {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (window.location.hash) {
+          history.pushState('', document.title, window.location.pathname + window.location.search);
+        }
+      }
+    });
+  });
+
+  // --- 6. DYNAMIC YEAR ---
   const yearEl = document.getElementById('current-year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();

@@ -52,94 +52,94 @@
     <!-- Node Header -->
     <path d="M 0 8 Q 0 0 8 0 L 416 0 Q 424 0 424 8 L 424 38 L 0 38 Z" class="bg-header"/>
     <rect x="14" y="12" width="10" height="14" rx="2" fill="#14b8a6"/>
-    <text x="32" y="24" class="txt-primary" font-size="13" font-weight="600">NODE B · AI Workhorse Hypervisor</text>
-    <text x="315" y="24" class="txt-muted" font-size="11">node B</text>
+    <text x="32" y="24" class="txt-primary" font-size="13" font-weight="600">NODE B · Compute &amp; Storage Plane</text>
+    <text x="335" y="24" class="txt-muted" font-size="11">node B</text>
     <line x1="0" y1="38" x2="424" y2="38" class="line-divider"/>
 
     <!-- Containers inside NODE B -->
     <!-- inference -->
     <g transform="translate(16, 50)">
       <rect width="188" height="96" rx="6" class="bg-highlight" stroke-width="1.5"/>
-      <text x="12" y="22" class="txt-teal" font-size="11">INFERENCE NODE</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Local LLM serving</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Long-context, model-replaceable</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Pinned cores · Locked memory</text>
+      <text x="12" y="22" class="txt-teal" font-size="11">INFERENCE RUNTIME</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">ik_llama.cpp Engine</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">Four-Model CPU Fleet</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Flash Attention · Pinned Threads</text>
     </g>
 
-    <!-- vector memory -->
+    <!-- ingestion and search -->
     <g transform="translate(220, 50)">
       <rect width="188" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">VECTOR MEMORY</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Qdrant Vector DB</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">gRPC / REST API</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">API-Key Auth · Embed API</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">INGESTION &amp; SEARCH</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Pipeline Automation</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">n8n · Paperless-ngx</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">SearXNG · Isolated Storage</text>
     </g>
 
-    <!-- automation -->
+    <!-- agent runtime -->
     <g transform="translate(16, 160)">
       <rect width="188" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">AUTOMATION</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">n8n Automation Engine</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Paperless-ngx + SearXNG</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Segmented Application Runtimes</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">AUTONOMOUS OPERATOR</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Hermes Sovereign Agent</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">MCP Protocol · Supervised</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Telemetry Ingest · Gated Gates</text>
     </g>
 
-    <!-- observability and agent -->
+    <!-- backup and storage authority -->
     <g transform="translate(220, 160)">
       <rect width="188" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">OBSERVABILITY + AGENT</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Grafana &amp; Prometheus</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Hermes Sovereign Agent</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Vaultwarden </text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">STORAGE AUTHORITY</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Proxmox Backup Server</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">Deduplicated Datastore</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Verified Daily Snapshots</text>
     </g>
   </g>
 
-  <!-- Node A: Proxmox Master & Homelab Hub -->
+  <!-- Node A: Proxmox Master & Control Plane -->
   <g transform="translate(480, 80)">
     <rect width="448" height="280" rx="8" class="bg-card" stroke-width="1" filter="url(#box-shadow)"/>
     
     <!-- Node Header -->
     <path d="M 0 8 Q 0 0 8 0 L 440 0 Q 448 0 448 8 L 448 38 L 0 38 Z" class="bg-header"/>
     <rect x="14" y="12" width="10" height="14" rx="2" fill="#14b8a6"/>
-    <text x="32" y="24" class="txt-primary" font-size="13" font-weight="600">NODE A · Proxmox Master &amp; Homelab Hub</text>
-    <text x="345" y="24" class="txt-muted" font-size="11">node A</text>
+    <text x="32" y="24" class="txt-primary" font-size="13" font-weight="600">NODE A · Control Plane &amp; Gateway</text>
+    <text x="365" y="24" class="txt-muted" font-size="11">node A</text>
     <line x1="0" y1="38" x2="448" y2="38" class="line-divider"/>
 
     <!-- Containers inside NODE A -->
-    <!-- edge and services -->
+    <!-- cluster master -->
     <g transform="translate(16, 50)">
       <rect width="200" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">EDGE + SERVICES</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Homelab Edge Hub</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Homepage · DocuSeal · Wallos</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Dockge · IT-Tools · Actual</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">CLUSTER MASTER</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Proxmox VE Controller</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">Corosync State Sync</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">High-Availability Engine</text>
     </g>
 
-    <!-- Edge VPS Origin (verified architecture) -->
+    <!-- ingress and mesh -->
     <g transform="translate(232, 50)">
-      <rect width="200" height="96" rx="6" class="bg-highlight" stroke-width="1.5"/>
-      <text x="12" y="22" class="txt-teal" font-size="11">EDGE ORIGIN (VPS)</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="600">zeshannasir.com</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Caddy HTTP/3 · Static Files</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Cloudflare Proxy · TLS 1.3</text>
+      <rect width="200" height="96" rx="6" class="bg-inner"/>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">SERVICE INGRESS</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Internal Gateway &amp; Proxy</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">Authenticated Core Ingress</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Automatic TLS &amp; Route Mesh</text>
     </g>
 
-    <!-- engineering and uptime -->
+    <!-- zero trust fabric -->
     <g transform="translate(16, 160)">
       <rect width="200" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">ENGINEERING</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Live Service Relay</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Ntfy · Miniflux · Memos</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Code-Server </text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">ZERO-TRUST FABRIC</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Encrypted Transport Mesh</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">WireGuard · Tailscale</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Peer-to-Peer Zero-Trust</text>
     </g>
 
-    <!-- Operational State -->
+    <!-- engineering execution sandbox -->
     <g transform="translate(232, 160)">
       <rect width="200" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">Status &amp; Verification</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Uptime Kuma </text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Proxmox Backup Server</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Deduplicated Nightly Drills</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">ENGINEERING SANDBOX</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Isolated KVM Environment</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">Candidate Benchmarking</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Dedicated Hardware Bounds</text>
     </g>
   </g>
 
@@ -148,22 +148,22 @@
     <!-- OPNsense Gateway -->
     <rect x="0" y="0" width="280" height="104" rx="8" class="bg-card"/>
     <text x="16" y="26" class="txt-primary" font-size="13" font-weight="600">Perimeter Gateway / Firewall</text>
-    <text x="16" y="46" class="txt-secondary" font-size="11">Firewall &amp; Intrusion Prevention</text>
-    <text x="16" y="68" class="txt-muted" font-size="11">Segmented VLANs · WireGuard VPN</text>
-    <text x="16" y="88" class="txt-teal" font-size="10">Isolated Management &amp; Compute</text>
+    <text x="16" y="46" class="txt-secondary" font-size="11">OPNsense Core Routing</text>
+    <text x="16" y="68" class="txt-muted" font-size="11">Segmented VLANs · WireGuard Mesh</text>
+    <text x="16" y="88" class="txt-teal" font-size="10">Strict Access Control Lists</text>
 
     <!-- Corosync External Quorum Witness (VPS) -->
     <rect x="300" y="0" width="344" height="104" rx="8" class="bg-highlight" stroke-width="1.5"/>
     <text x="316" y="26" class="txt-teal" font-size="13">External Quorum Witness (QDevice)</text>
-    <text x="316" y="46" class="txt-primary" font-size="11" font-weight="600">Off-site Cloud Quorum Witness (VPS)</text>
+    <text x="316" y="46" class="txt-primary" font-size="11" font-weight="600">Off-site Cloud Witness (VPS)</text>
     <text x="316" y="68" class="txt-secondary" font-size="11">Independent Failure Domain · 3rd Vote</text>
     <text x="316" y="88" class="txt-green" font-size="10">Zero Split-Brain on Hypervisor Reboot</text>
 
     <!-- Cloudflare Edge Box -->
     <rect x="664" y="0" width="232" height="104" rx="8" class="bg-card"/>
-    <text x="680" y="26" class="txt-primary" font-size="13" font-weight="600">Cloudflare Edge Security</text>
-    <text x="680" y="46" class="txt-secondary" font-size="11">Full (Strict) TLS 1.3 · Anycast</text>
-    <text x="680" y="68" class="txt-muted" font-size="11">Origin Auth · DDoS Defense</text>
-    <text x="680" y="88" class="txt-teal" font-size="10">Edge Routing &amp; Security Rules</text>
+    <text x="680" y="26" class="txt-primary" font-size="13" font-weight="600">Edge Security &amp; Origin</text>
+    <text x="680" y="46" class="txt-secondary" font-size="11">Cloudflare Anycast · TLS 1.3</text>
+    <text x="680" y="68" class="txt-muted" font-size="11">Caddy HTTP/3 Origin Server</text>
+    <text x="680" y="88" class="txt-teal" font-size="10">Origin Auth · DDoS Defense</text>
   </g>
 </svg>
