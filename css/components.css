@@ -549,13 +549,75 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   background-color: var(--bg-canvas);
+  padding: var(--space-lg);
 }
 
-.system-diagram-wrap img {
+/* Architecture Diagrams (Responsive & Theme-Adaptive) */
+.pipeline-diagram,
+.cluster-diagram {
   width: 100%;
   height: auto;
   display: block;
 }
+
+.system-diagram-wrap img,
+.cluster-visual-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Dark mode (default) */
+.pipeline-diagram .bg-card,
+.cluster-diagram .bg-card { fill: #11151c; stroke: rgba(255, 255, 255, 0.12); }
+.pipeline-diagram .bg-header,
+.cluster-diagram .bg-header { fill: #171d26; }
+.pipeline-diagram .bg-inner,
+.cluster-diagram .bg-inner { fill: #0b0d11; stroke: rgba(255, 255, 255, 0.08); }
+.pipeline-diagram .bg-highlight,
+.cluster-diagram .bg-highlight { fill: #0b0d11; stroke: #14b8a6; }
+.pipeline-diagram .txt-primary,
+.cluster-diagram .txt-primary { fill: #f1f5f9; font-family: var(--font-sans); }
+.pipeline-diagram .txt-secondary,
+.cluster-diagram .txt-secondary { fill: #94a3b8; font-family: var(--font-sans); }
+.pipeline-diagram .txt-muted,
+.cluster-diagram .txt-muted { fill: #8896ab; font-family: var(--font-mono); }
+.pipeline-diagram .txt-teal,
+.cluster-diagram .txt-teal { fill: #14b8a6; font-family: var(--font-mono); font-weight: 600; }
+.pipeline-diagram .txt-green,
+.cluster-diagram .txt-green { fill: #10b981; font-family: var(--font-mono); font-weight: 600; }
+.pipeline-diagram .txt-amber,
+.cluster-diagram .txt-amber { fill: #f59e0b; font-family: var(--font-mono); font-weight: 600; }
+.pipeline-diagram .badge-bg,
+.cluster-diagram .badge-bg { fill: rgba(20, 184, 166, 0.12); stroke: #14b8a6; }
+.pipeline-diagram .line-divider,
+.cluster-diagram .line-divider { stroke: rgba(255, 255, 255, 0.08); }
+
+/* Light mode (toggled via data-theme="light") */
+[data-theme="light"] .pipeline-diagram .bg-card,
+[data-theme="light"] .cluster-diagram .bg-card { fill: #ffffff; stroke: rgba(0, 0, 0, 0.12); }
+[data-theme="light"] .pipeline-diagram .bg-header,
+[data-theme="light"] .cluster-diagram .bg-header { fill: #f8fafc; }
+[data-theme="light"] .pipeline-diagram .bg-inner,
+[data-theme="light"] .cluster-diagram .bg-inner { fill: #f1f5f9; stroke: rgba(0, 0, 0, 0.08); }
+[data-theme="light"] .pipeline-diagram .bg-highlight,
+[data-theme="light"] .cluster-diagram .bg-highlight { fill: #f0fdfa; stroke: #0d9488; }
+[data-theme="light"] .pipeline-diagram .txt-primary,
+[data-theme="light"] .cluster-diagram .txt-primary { fill: #0f172a; }
+[data-theme="light"] .pipeline-diagram .txt-secondary,
+[data-theme="light"] .cluster-diagram .txt-secondary { fill: #475569; }
+[data-theme="light"] .pipeline-diagram .txt-muted,
+[data-theme="light"] .cluster-diagram .txt-muted { fill: #64748b; }
+[data-theme="light"] .pipeline-diagram .txt-teal,
+[data-theme="light"] .cluster-diagram .txt-teal { fill: #0d9488; }
+[data-theme="light"] .pipeline-diagram .txt-green,
+[data-theme="light"] .cluster-diagram .txt-green { fill: #059669; }
+[data-theme="light"] .pipeline-diagram .txt-amber,
+[data-theme="light"] .cluster-diagram .txt-amber { fill: #d97706; }
+[data-theme="light"] .pipeline-diagram .badge-bg,
+[data-theme="light"] .cluster-diagram .badge-bg { fill: rgba(13, 148, 136, 0.08); stroke: #0d9488; }
+[data-theme="light"] .pipeline-diagram .line-divider,
+[data-theme="light"] .cluster-diagram .line-divider { stroke: rgba(0, 0, 0, 0.08); }
 
 /* --- 6. RELIABILITY LAB & METRICS --- */
 .lab-telemetry-grid {
