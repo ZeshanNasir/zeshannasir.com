@@ -551,6 +551,12 @@
   background-color: var(--bg-canvas);
 }
 
+.system-diagram-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* --- 6. RELIABILITY LAB & METRICS --- */
 .lab-telemetry-grid {
   display: grid;
@@ -611,6 +617,12 @@
   padding: var(--space-lg);
   margin-bottom: var(--space-3xl);
   box-shadow: var(--shadow-sm);
+}
+
+.cluster-visual-container img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .cluster-visual-header {

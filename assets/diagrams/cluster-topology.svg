@@ -12,6 +12,19 @@
       .txt-green { fill: #10b981; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; font-weight: 600; }
       .badge-bg { fill: rgba(20, 184, 166, 0.12); stroke: #14b8a6; }
       .line-divider { stroke: rgba(255, 255, 255, 0.08); }
+      @media (prefers-color-scheme: light) {
+        .bg-card { fill: #ffffff; stroke: rgba(0, 0, 0, 0.12); }
+        .bg-header { fill: #f8fafc; }
+        .bg-inner { fill: #f1f5f9; stroke: rgba(0, 0, 0, 0.08); }
+        .bg-highlight { fill: #f0fdfa; stroke: #0d9488; }
+        .txt-primary { fill: #0f172a; }
+        .txt-secondary { fill: #475569; }
+        .txt-muted { fill: #64748b; }
+        .txt-teal { fill: #0d9488; }
+        .txt-green { fill: #059669; }
+        .badge-bg { fill: rgba(13, 148, 136, 0.08); stroke: #0d9488; }
+        .line-divider { stroke: rgba(0, 0, 0, 0.08); }
+      }
     </style>
     <filter id="box-shadow" x="-3%" y="-3%" width="106%" height="110%">
       <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
