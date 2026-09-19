@@ -502,7 +502,7 @@ No test may be deleted or weakened to make a run pass.
 | --- | --- | --- |
 | **D1** | **Employer clearance** for the metrics in X7 and X8, or acceptance of qualitative restatement | The three case-study sidebars and the career statistics |
 | **D2** | **Orphan content**: promote `content/**` to real routes, or move it under `docs/` | Section 4 resolution |
-| **D3** | **Contact address.** `zeshannasir.com` has no MX record. | **Resolved**: Cloudflare Email Routing active (`contact@` and `me@` route to `zeshan.sudo@gmail.com`). Public MX/SPF verified. |
+| **D3** | **Contact address.** `zeshannasir.com` has no MX record. | **Resolved**: Cloudflare Email Routing active (`contact@zeshannasir.com` routes to `zeshannasir26@gmail.com`, `me@zeshannasir.com` routes to `zeshan.nasir@icloud.com`). Public MX/SPF verified. |
 | **D4** | **Remote for this repository.** Six commits exist only on this machine. Push to a new private GitHub repository, to the Gitea instance, or accept local-only | Nothing in Pass B; a durability decision |
 | **D5** | **Fate of `~/portfolio` after cutover.** Archive the GitHub repository, disable the deploy workflow, or keep it as the `/portal`-era artefact | Post-migration housekeeping. The workflow must at minimum be disabled, or a future push will overwrite `/var/www/portfolio` while the redirect is live |
 | **D6** | **One job title**, for `<title>`, JSON-LD, `llms.txt`, `career.md` and `resume.pdf` | X14 |
