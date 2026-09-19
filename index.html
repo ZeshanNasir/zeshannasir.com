@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zeshan Nasir — Systems Operator & AI Reliability Engineer</title>
+  <title>Zeshan Nasir — Infrastructure Reliability &amp; Local AI Systems</title>
   
   <meta name="description" content="I build the reliability layer AI depends on. Enterprise knowledge lifecycle governance, sovereign AI infrastructure, and secure endpoint fleet engineering.">
   <meta name="author" content="Zeshan Nasir">
@@ -15,22 +15,20 @@
   <meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
 
   <!-- Open Graph / Social -->
-  <meta property="og:title" content="Zeshan Nasir — Systems Operator & AI Reliability Engineer">
+  <meta property="og:title" content="Zeshan Nasir — Infrastructure Reliability &amp; Local AI Systems">
   <meta property="og:description" content="I build the reliability layer AI depends on. Governed data, reliable automation, and sovereign infrastructure.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zeshannasir.com/">
-  <meta property="og:image" content="https://zeshannasir.com/assets/images/og-legacy.png">
+  <meta property="og:image" content="https://zeshannasir.com/assets/images/og.png">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Zeshan Nasir — Systems Operator & AI Reliability Engineer">
+  <meta name="twitter:title" content="Zeshan Nasir — Infrastructure Reliability &amp; Local AI Systems">
   <meta name="twitter:description" content="I build the reliability layer AI depends on. Governed data, reliable automation, and sovereign infrastructure.">
-  <meta name="twitter:image" content="https://zeshannasir.com/assets/images/og-legacy.png">
+  <meta name="twitter:image" content="https://zeshannasir.com/assets/images/og.png">
 
-  <!-- Typography: Inter & JetBrains Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Typography: Inter & JetBrains Mono, self-hosted. No third-party request. -->
+  <link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -46,7 +44,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Zeshan Nasir",
-    "jobTitle": "Systems Administrator & Reliability Engineer",
+    "jobTitle": "System Administrator",
     "worksFor": {
       "@type": "Organization",
       "name": "Optimizely"
@@ -56,7 +54,7 @@
       "https://github.com/ZeshanNasir",
       "https://linkedin.com/in/zeshan-nasir"
     ],
-    "description": "Systems operator focused on data reliability for AI, knowledge governance, and sovereign infrastructure."
+    "description": "System administrator working on infrastructure reliability, enterprise knowledge governance, and self-hosted AI infrastructure."
   }
   </script>
 </head>
@@ -86,21 +84,16 @@
 
       <!-- Navigation -->
       <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+        <a href="#manifesto" class="site-nav__link">Principles</a>
         <a href="#work" class="site-nav__link">Systems</a>
-        <a href="#manifesto" class="site-nav__link">Manifesto</a>
-        <a href="#lab" class="site-nav__link">Reliability Lab</a>
+        <a href="#lab" class="site-nav__link">Platform</a>
         <a href="#decisions" class="site-nav__link">Decisions</a>
-        <a href="#signal" class="site-nav__link">Authority</a>
+        <a href="#signal" class="site-nav__link">Experience</a>
         <a href="#contact" class="site-nav__link">Contact</a>
       </nav>
 
       <!-- Header Controls -->
       <div class="header-actions">
-        <div class="status-beacon" title="OMEGA Sovereign Cluster: 2 Physical Nodes + External QDevice Quorate">
-          <span class="status-beacon__dot"></span>
-          <span>CLUSTER QUORATE</span>
-        </div>
-
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme (Shortcut: T)" title="Toggle Theme (T)">
           <svg class="theme-icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           <svg class="theme-icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -124,7 +117,7 @@
         <div class="hero-grid">
           <div>
             <div class="hero-eyebrow">
-              <span>SYSTEMS OPERATOR · DATA RELIABILITY FOR AI · SOVEREIGN INFRASTRUCTURE</span>
+              <span>INFRASTRUCTURE RELIABILITY · KNOWLEDGE GOVERNANCE · LOCAL AI</span>
             </div>
             
             <h1 class="hero-title">
@@ -193,7 +186,7 @@
               <span class="manifesto-card__num">01 / INPUT INTEGRITY</span>
               <h3 class="manifesto-card__title">AI fails at the input layer before it fails on model weights.</h3>
               <p class="manifesto-card__body">
-                The industry fixates on parameter counts and prompt hacks while ignoring the ground truth. An LLM cannot reason past stale confluence pages, unversioned runbooks, or broken API schemas. When input data is verified, hallucinations collapse.
+                The industry fixates on parameter counts and prompt hacks while ignoring the ground truth. An LLM cannot reason past stale wiki pages, unversioned runbooks, or broken API schemas. When input data is verified, hallucinations collapse.
               </p>
             </div>
             <div class="manifesto-card__quote">
@@ -229,7 +222,7 @@
               <span class="manifesto-card__num">04 / SOVEREIGN MASTERY</span>
               <h3 class="manifesto-card__title">Sovereign operation enforces uncheatable rigor.</h3>
               <p class="manifesto-card__body">
-                Cloud APIs abstract away operational truth. Operating bare-metal hypervisors, pinning CPU cores, locking resident memory (<code class="tech-tag">mlock</code>), tuning KV caches, and validating bare-metal restore drills gives an unshakeable understanding of what reliable systems actually require under pressure.
+                Cloud APIs abstract away operational truth. Running bare-metal hypervisors, pinning CPU cores, locking resident memory (<code class="tech-tag">mlock</code>), tuning KV caches, and validating bare-metal restore drills gives an unshakeable understanding of what reliable systems actually require under pressure.
               </p>
             </div>
             <div class="manifesto-card__quote">
@@ -259,21 +252,21 @@
               <div>
                 <div class="system-card__meta">
                   <span class="system-card__index">SYSTEM 01</span>
-                  <span class="system-card__domain">Optimizely · Enterprise Automation · AI Grounding</span>
+                  <span class="system-card__domain">Enterprise Automation · Knowledge Governance · AI Grounding</span>
                 </div>
                 <h3 class="system-card__title">Enterprise Knowledge Lifecycle Governance</h3>
               </div>
               <div class="tech-tags">
-                <span class="tech-tag">Confluence Cloud API</span>
-                <span class="tech-tag">Workato</span>
-                <span class="tech-tag">Jira Service Management</span>
-                <span class="tech-tag">Atlassian Rovo</span>
+                <span class="tech-tag">Knowledge Workspace API</span>
+                <span class="tech-tag">Workflow Automation</span>
+                <span class="tech-tag">Service Management API</span>
+                <span class="tech-tag">Enterprise Search</span>
                 <span class="tech-tag">Python</span>
               </div>
             </div>
 
             <p class="system-card__tagline">
-              Automated governance engine enforcing documentation contracts, ownership schemas, SLA review cadences, and stale page quarantine to ground enterprise AI in certified truth.
+              Automated governance engine enforcing documentation contracts, ownership schemas, SLA review cadences, and stale page quarantine to ground enterprise AI in verified truth.
             </p>
 
             <div class="system-grid">
@@ -281,49 +274,43 @@
                 <div class="system-block">
                   <span class="system-block__label">The Problem</span>
                   <p class="system-block__text">
-                    As enterprise AI assistants (Atlassian Rovo) were deployed, over 40% of indexed documentation was unowned or outdated, leading to conflicting operational directives and hallucinated procedures during onboarding and incident triage.
+                    As enterprise AI assistants were rolled out, a large share of indexed documentation had no identifiable owner and no review date. Unowned pages produce conflicting operational directives, and an assistant grounded on them repeats the conflict with more confidence than the wiki ever did.
                   </p>
                 </div>
 
                 <div class="system-block">
                   <span class="system-block__label">What I Designed &amp; Enforced</span>
                   <p class="system-block__text">
-                    Architected an automated validation pipeline via Workato and Confluence REST APIs: enforced mandatory frontmatter schemas (Owner UUID, Cadence TTL, Domain classification). Built automated cron sweeps generating SLA-tracked review tickets in Jira. Stale or unresponsive pages are automatically quarantined to an unindexed archive space tagged <code class="tech-tag">NOINDEX</code>.
+                    Architected an automated validation pipeline connecting enterprise workflow engines with knowledge workspace APIs: enforced mandatory frontmatter schemas (Owner UUID, Cadence TTL, Domain classification). Built automated cron sweeps generating SLA-tracked review tickets in service-management systems. Stale or unresponsive pages are automatically quarantined to an unindexed archive space tagged <code class="tech-tag">NOINDEX</code>.
                   </p>
                 </div>
 
                 <div class="system-block">
                   <span class="system-block__label">Why It Matters</span>
                   <p class="system-block__text">
-                    Transformed a decaying wiki into a living, certified knowledge contract. Search engines and RAG retrieval pipelines now query a clean corpus, eliminating AI hallucinations at the source.
+                    Transformed a decaying wiki into a living, verified knowledge contract. Search engines and RAG retrieval pipelines now query a clean corpus, eliminating AI hallucinations at the source.
                   </p>
                 </div>
               </div>
 
               <div class="system-grid__sidebar">
                 <div class="metrics-box">
-                  <span class="metrics-box__title">Impact &amp; Verification</span>
-                  <div class="metrics-box__stat">
-                    <span class="metrics-box__val">100%</span>
-                    <span class="metrics-box__unit">Schema Coverage</span>
-                  </div>
-                  <p class="metrics-box__desc">Mandatory verified ownership enforced across target enterprise spaces.</p>
+                  <span class="metrics-box__title">What the design enforces</span>
+                  <p class="metrics-box__desc">Every page in a governed space carries an owner and a review cadence, or it does not stay in the index.</p>
                 </div>
 
                 <div class="metrics-box">
-                  <span class="metrics-box__title">Corpus Sanitization</span>
-                  <div class="metrics-box__stat">
-                    <span class="metrics-box__val">400+</span>
-                    <span class="metrics-box__unit">Pages Deprecated</span>
-                  </div>
-                  <p class="metrics-box__desc">Obsolete documents safely removed from AI indexing crawlers without broken hyperlinks.</p>
+                  <span class="metrics-box__title">How deprecation works</span>
+                  <p class="metrics-box__desc">Obsolete pages move to an unindexed archive rather than being deleted, so inbound links resolve instead of breaking.</p>
                 </div>
+
+                <p class="metrics-note">Employer-internal figures are deliberately omitted. The design is mine to describe; organizational metrics belong to the employer.</p>
               </div>
             </div>
 
             <!-- Pipeline Diagram -->
             <div class="system-diagram-wrap" title="Knowledge Lifecycle Architecture">
-              <img src="assets/diagrams/knowledge-pipeline.svg" alt="Knowledge Lifecycle Governance Pipeline Diagram" loading="eager" width="960" height="380">
+              <img src="assets/diagrams/knowledge-pipeline.svg" alt="Knowledge lifecycle pipeline: pages are validated against an ownership and review-cadence schema, reviews are raised as tracked tickets, and pages that fail review move to an unindexed archive rather than being deleted." loading="lazy" decoding="async" width="960" height="380">
             </div>
           </article>
 
@@ -338,7 +325,7 @@
                 <h3 class="system-card__title">Hermes: Dossier-Grounded Sovereign Ops Agent</h3>
               </div>
               <div class="tech-tags">
-                <span class="tech-tag">ik_llama.cpp</span>
+                <span class="tech-tag">llama.cpp</span>
                 <span class="tech-tag">Qdrant Vector DB</span>
                 <span class="tech-tag">Tailscale Zero-Trust</span>
                 <span class="tech-tag">Prometheus / Loki</span>
@@ -376,21 +363,13 @@
 
               <div class="system-grid__sidebar">
                 <div class="metrics-box">
-                  <span class="metrics-box__title">Safety Record</span>
-                  <div class="metrics-box__stat">
-                    <span class="metrics-box__val">0</span>
-                    <span class="metrics-box__unit">Accidental Mutations</span>
-                  </div>
-                  <p class="metrics-box__desc">100% of state-changing commands gated behind human diff previews.</p>
+                  <span class="metrics-box__title">The safety property</span>
+                  <p class="metrics-box__desc">No state-changing command executes without a human approving a rendered diff first. The gate is structural, not a policy the agent is asked to follow.</p>
                 </div>
 
                 <div class="metrics-box">
-                  <span class="metrics-box__title">Triage Speed</span>
-                  <div class="metrics-box__stat">
-                    <span class="metrics-box__val">&lt; 90s</span>
-                    <span class="metrics-box__unit">Anomaly Correlated</span>
-                  </div>
-                  <p class="metrics-box__desc">Autonomous log cross-correlation across 9 cluster containers.</p>
+                  <span class="metrics-box__title">What it actually does</span>
+                  <p class="metrics-box__desc">Reads metrics and logs across the cluster, correlates an anomaly to a probable cause, and drafts the remediation for review.</p>
                 </div>
               </div>
             </div>
@@ -439,28 +418,24 @@
                 <div class="system-block">
                   <span class="system-block__label">Why It Matters</span>
                   <p class="system-block__text">
-                    Allows rolling hypervisor maintenance without guest outages, and ensures local AI workloads operate with rock-solid latency guarantees.
+                    Allows rolling hypervisor maintenance without guest outages, and ensures local AI workloads run with rock-solid latency guarantees.
                   </p>
                 </div>
               </div>
 
               <div class="system-grid__sidebar">
                 <div class="metrics-box">
-                  <span class="metrics-box__title">Quorum Resiliency</span>
+                  <span class="metrics-box__title">Quorum topology</span>
                   <div class="metrics-box__stat">
                     <span class="metrics-box__val">2 + 1</span>
-                    <span class="metrics-box__unit">Witness Nodes</span>
+                    <span class="metrics-box__unit">nodes plus witness</span>
                   </div>
-                  <p class="metrics-box__desc">External Corosync tie-breaker prevents 2-node split-brain guest freezes.</p>
+                  <p class="metrics-box__desc">An external Corosync QDevice outside the local failure domain breaks the tie, so either node can reboot without freezing cluster state.</p>
                 </div>
 
                 <div class="metrics-box">
-                  <span class="metrics-box__title">Context Delivery</span>
-                  <div class="metrics-box__stat">
-                    <span class="metrics-box__val">128K</span>
-                    <span class="metrics-box__unit">Tokens Served</span>
-                  </div>
-                  <p class="metrics-box__desc">Pinned CPU cores and locked RAM prevent page-swapping latency spikes.</p>
+                  <span class="metrics-box__title">Inference tier</span>
+                  <p class="metrics-box__desc">Dedicated cores and locked resident memory, so a long-context request is not competing with media work for pages.</p>
                 </div>
               </div>
             </div>
@@ -474,10 +449,11 @@
     <section class="section" id="lab">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">03 / RELIABILITY LAB</span>
-          <h2 class="section-title">Live Sovereign Telemetry</h2>
+          <span class="section-eyebrow">03 / THE PLATFORM</span>
+          <h2 class="section-title">What the cluster is, and what it runs</h2>
           <p class="section-subtitle">
-            Real operational baselines measured on the physical OMEGA cluster. No cloud abstractions.
+            A self-hosted platform I operate personally. The figures below are design parameters,
+            not a live readout &mdash; this is a static page and nothing on it is measured in real time.
           </p>
         </div>
 
@@ -485,104 +461,88 @@
         <div class="lab-telemetry-grid">
           <div class="telemetry-card">
             <div class="telemetry-card__header">
-              <span class="telemetry-card__label">Context Window</span>
-              <span class="telemetry-card__dot"></span>
+              <span class="telemetry-card__label">Hypervisor</span>
             </div>
-            <div class="telemetry-card__val">128K</div>
-            <p class="telemetry-card__desc">Resident in locked RAM via ik_llama.cpp</p>
+            <div class="telemetry-card__val">2 + 1</div>
+            <p class="telemetry-card__desc">Two Proxmox VE nodes with an external quorum witness off-site</p>
           </div>
 
           <div class="telemetry-card">
             <div class="telemetry-card__header">
-              <span class="telemetry-card__label">Vector Latency</span>
-              <span class="telemetry-card__dot"></span>
+              <span class="telemetry-card__label">Inference</span>
             </div>
-            <div class="telemetry-card__val">&lt; 8ms</div>
-            <p class="telemetry-card__desc">Qdrant gRPC p95 retrieval across cluster</p>
+            <div class="telemetry-card__val">Local</div>
+            <p class="telemetry-card__desc">Long-context CPU inference on a dedicated node, resident memory locked</p>
           </div>
 
           <div class="telemetry-card">
             <div class="telemetry-card__header">
-              <span class="telemetry-card__label">Quorum State</span>
-              <span class="telemetry-card__dot"></span>
+              <span class="telemetry-card__label">Retrieval</span>
             </div>
-            <div class="telemetry-card__val">Quorate</div>
-            <p class="telemetry-card__desc">2 physical Proxmox nodes + 1 cloud witness</p>
+            <div class="telemetry-card__val">Isolated</div>
+            <p class="telemetry-card__desc">Vector memory on its own tier rather than shared with media work</p>
           </div>
 
           <div class="telemetry-card">
             <div class="telemetry-card__header">
-              <span class="telemetry-card__label">Disaster Recovery</span>
-              <span class="telemetry-card__dot"></span>
+              <span class="telemetry-card__label">Recovery</span>
             </div>
-            <div class="telemetry-card__val">100%</div>
-            <p class="telemetry-card__desc">Verified bare-metal restoration drills</p>
+            <div class="telemetry-card__val">Drilled</div>
+            <p class="telemetry-card__desc">Deduplicated backups plus scheduled bare-metal restore rehearsals</p>
           </div>
         </div>
 
         <!-- Topology Diagram -->
         <div class="cluster-visual-container">
           <div class="cluster-visual-header">
-            <h3 class="cluster-visual-title">Authoritative Physical &amp; Container Topology</h3>
-            <span class="tech-tag">Subnet: 192.168.20.0/24 · OPNsense · Tailscale Mesh</span>
+            <h3 class="cluster-visual-title">Platform topology, by role</h3>
+            <span class="tech-tag">Private network · OPNsense · WireGuard mesh</span>
           </div>
-          <img src="assets/diagrams/cluster-topology.svg" alt="OMEGA Cluster Sovereign Topology Diagram" loading="eager" width="960" height="520">
+          <img src="assets/diagrams/cluster-topology.svg" alt="Platform topology by role: two hypervisor nodes carrying the inference, vector memory, automation, observability and agent-runtime roles, with an external quorum witness off-site and a private encrypted mesh between them." loading="lazy" decoding="async" width="960" height="520">
         </div>
 
         <!-- Services Table -->
         <div class="services-table-wrap">
           <table class="services-table">
+            <caption>Platform roles and the boundary each one is held to. Addresses, host names
+              and ports are deliberately not published.</caption>
             <thead>
               <tr>
-                <th>Container</th>
-                <th>Host Node</th>
-                <th>IP Subnet</th>
-                <th>Role &amp; Primary Services</th>
-                <th>Operational Boundary</th>
+                <th scope="col">Role</th>
+                <th scope="col">What runs there</th>
+                <th scope="col">Operational boundary</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><span class="service-badge">CT 401 · ai-core</span></td>
-                <td>ms02 (Workhorse)</td>
-                <td><code>192.168.20.21</code></td>
-                <td>ik_llama.cpp (:8080) · Qwen3.6-35B resident</td>
-                <td>mlock locked, P-cores 0-5 pinned</td>
+                <th scope="row"><span class="service-badge">Inference</span></th>
+                <td>Long-context local LLM serving</td>
+                <td>Resident memory locked, performance cores pinned</td>
               </tr>
               <tr>
-                <td><span class="service-badge">CT 402 · ai-mem</span></td>
-                <td>ms02 (Workhorse)</td>
-                <td><code>192.168.20.22</code></td>
-                <td>Qdrant Vector DB (:6333/6334) · Embedding API</td>
-                <td>Decoupled memory tier, API-key auth</td>
+                <th scope="row"><span class="service-badge">Vector memory</span></th>
+                <td>Vector database and embedding API</td>
+                <td>Its own tier, authenticated, never shared with media work</td>
               </tr>
               <tr>
-                <td><span class="service-badge">CT 403 · ai-flow</span></td>
-                <td>ms02 (Workhorse)</td>
-                <td><code>192.168.20.23</code></td>
-                <td>n8n Automation (:5678) · Paperless (:8000) · SearXNG</td>
-                <td>Automated document &amp; webhook pipelines</td>
+                <th scope="row"><span class="service-badge">Automation</span></th>
+                <td>Workflow engine, document pipeline, private search</td>
+                <td>Scheduled and webhook-driven, no inbound public route</td>
               </tr>
               <tr>
-                <td><span class="service-badge">CT 404 · ai-obs</span></td>
-                <td>ms02 (Workhorse)</td>
-                <td><code>192.168.20.24</code></td>
-                <td>Prometheus (:9090) · Grafana (:3000) · Vaultwarden</td>
-                <td>Telemetry ingestion, encrypted secrets</td>
+                <th scope="row"><span class="service-badge">Observability</span></th>
+                <td>Metrics, dashboards, secret storage</td>
+                <td>Ingest only, secrets encrypted at rest</td>
               </tr>
               <tr>
-                <td><span class="service-badge">CT 406 · ai-hermes</span></td>
-                <td>ms02 (Workhorse)</td>
-                <td><code>192.168.20.26</code></td>
-                <td>Hermes Agent Runtime (:9119)</td>
-                <td>Read-mostly triage, gated mutations</td>
+                <th scope="row"><span class="service-badge">Agent runtime</span></th>
+                <td>The operations agent described above</td>
+                <td>Read-mostly, every mutation gated on human approval</td>
               </tr>
               <tr>
-                <td><span class="service-badge">CT 301 · svc-ct-01</span></td>
-                <td>hp260 (Master)</td>
-                <td><code>192.168.20.100</code></td>
-                <td>Homelab Hub · DocuSeal · Wallos · Cloudflare Ingress</td>
-                <td>Zero-port forward tunnel to zeshannasir.com</td>
+                <th scope="row"><span class="service-badge">Edge and services</span></th>
+                <td>Reverse proxy and self-hosted utilities</td>
+                <td>Reachable only over the private mesh, no forwarded router ports</td>
               </tr>
             </tbody>
           </table>
@@ -630,11 +590,11 @@
             </div>
             <div class="adr-card__section">
               <span class="adr-card__label">Decision</span>
-              <p class="adr-card__desc">Isolated Qdrant vector memory into dedicated CT402 with pinned memory limits and dedicated storage allocations.</p>
+              <p class="adr-card__desc">Moved vector memory onto its own container with its own memory limit and storage allocation, separate from the media plane.</p>
             </div>
             <div class="adr-card__section">
               <span class="adr-card__label">Result</span>
-              <p class="adr-card__desc">Vector query p95 latency stabilized under 8ms and disk I/O wait dropped to baseline.</p>
+              <p class="adr-card__desc">Vector queries stopped contending with transcode I/O, and retrieval latency became predictable rather than spiky under load.</p>
             </div>
           </div>
 
@@ -681,10 +641,10 @@
     <section class="section" id="signal">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">05 / AUTHORITY SIGNAL</span>
-          <h2 class="section-title">Operational Background</h2>
+          <span class="section-eyebrow">05 / EXPERIENCE</span>
+          <h2 class="section-title">Experience</h2>
           <p class="section-subtitle">
-            14+ years managing global enterprise fleet compliance, identity governance, and high-availability operations.
+            Fourteen years of endpoint fleet management, identity governance and high-availability operations, across three countries.
           </p>
         </div>
 
@@ -692,32 +652,32 @@
           <div class="career-grid">
             <div class="career-summary">
               <p class="career-summary__lead">
-                Currently operating at <strong>Optimizely</strong> in Stockholm, managing global macOS and Windows fleets, orchestrating automated knowledge lifecycle governance, and hardening cloud identity systems across distributed European teams.
+                System Administrator at <strong>Optimizely</strong> in Stockholm: macOS and Windows fleet management, automated knowledge lifecycle governance, and cloud identity hardening for distributed European teams.
               </p>
 
               <div class="career-stats">
                 <div class="career-stat">
                   <div class="career-stat__num">14+</div>
-                  <div class="career-stat__label">Years in Enterprise IT</div>
+                  <div class="career-stat__label">Years in enterprise IT</div>
                 </div>
                 <div class="career-stat">
-                  <div class="career-stat__num">1,000+</div>
-                  <div class="career-stat__label">Endpoints Governed</div>
+                  <div class="career-stat__num">2012</div>
+                  <div class="career-stat__label">First NOC role</div>
                 </div>
                 <div class="career-stat">
-                  <div class="career-stat__num">ISO 27001</div>
-                  <div class="career-stat__label">Audit-Ready Baselines</div>
+                  <div class="career-stat__num">Stockholm</div>
+                  <div class="career-stat__label">Based in Sweden</div>
                 </div>
                 <div class="career-stat">
-                  <div class="career-stat__num">EU Permit</div>
-                  <div class="career-stat__label">Stockholm, Sweden</div>
+                  <div class="career-stat__num">EU permit</div>
+                  <div class="career-stat__label">Right to work</div>
                 </div>
               </div>
 
               <div class="system-block">
                 <span class="system-block__label">Core Competencies</span>
                 <p class="system-block__text">
-                  Microsoft Intune · Jamf Pro · Entra ID (Azure AD) · Conditional Access &amp; MFA · Workato Automation · Proxmox VE · Tailscale Mesh · Caddy HTTP/3 · Linux System Administration · Local LLM Inference Engineering
+                  Microsoft Intune · Jamf Pro · Entra ID (Azure AD) · Conditional Access &amp; MFA · Enterprise Workflow Automation · Proxmox VE · Tailscale Mesh · Caddy HTTP/3 · Linux System Administration · Local LLM Inference Engineering
                 </p>
               </div>
             </div>
@@ -729,7 +689,7 @@
                 <h3 class="timeline-item__role">System Administrator</h3>
                 <span class="timeline-item__company">Optimizely · Stockholm, Sweden</span>
                 <p class="timeline-item__desc">
-                  Oversee global device fleet engineering (Intune, Jamf Pro) and identity governance (Entra ID, M365). Architected automated Confluence documentation governance engines to ground enterprise search and Atlassian Rovo in certified truth.
+                  Device fleet engineering across macOS and Windows (Intune, Jamf Pro) and identity governance (Entra ID, Microsoft 365). Designed the automated documentation governance described above, so enterprise search and assistants retrieve pages that have an owner and a review date.
                 </p>
               </div>
 
@@ -772,22 +732,22 @@
           <span class="section-eyebrow">06 / OPERATOR</span>
           <h2 class="section-title">Direct Connection</h2>
           <p class="section-subtitle">
-            Available for technical discussions on data reliability for AI, enterprise knowledge governance, and sovereign systems engineering.
+            Open to technical conversations about infrastructure reliability, knowledge governance, and running AI workloads on hardware you control.
           </p>
         </div>
 
         <div class="contact-card-grid">
           <!-- Email Card with Copy Trigger -->
-          <div class="contact-channel" data-copy="contact@zeshannasir.com" title="Click to copy email address">
-            <svg class="contact-channel__icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <h3 class="contact-channel__title">Primary Email</h3>
-            <span class="contact-channel__detail">contact@zeshannasir.com</span>
-            <span class="contact-channel__action">Click to copy address 📋</span>
-          </div>
+          <button type="button" class="contact-channel" data-copy="contact@zeshans.dev">
+            <svg class="contact-channel__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <h3 class="contact-channel__title">Email</h3>
+            <span class="contact-channel__detail">contact@zeshans.dev</span>
+            <span class="contact-channel__action">Copy address</span>
+          </button>
 
           <!-- LinkedIn -->
           <a href="https://linkedin.com/in/zeshan-nasir" class="contact-channel" target="_blank" rel="noopener noreferrer">
-            <svg class="contact-channel__icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <svg class="contact-channel__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             <h3 class="contact-channel__title">LinkedIn</h3>
             <span class="contact-channel__detail">linkedin.com/in/zeshan-nasir</span>
             <span class="contact-channel__action">Open profile ↗</span>
@@ -795,7 +755,7 @@
 
           <!-- GitHub -->
           <a href="https://github.com/ZeshanNasir" class="contact-channel" target="_blank" rel="noopener noreferrer">
-            <svg class="contact-channel__icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg class="contact-channel__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             <h3 class="contact-channel__title">GitHub</h3>
             <span class="contact-channel__detail">github.com/ZeshanNasir</span>
             <span class="contact-channel__action">View repositories ↗</span>
@@ -803,7 +763,7 @@
 
           <!-- Resume PDF -->
           <a href="/resume.pdf" class="contact-channel" target="_blank" rel="noopener noreferrer">
-            <svg class="contact-channel__icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            <svg class="contact-channel__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
             <h3 class="contact-channel__title">Curriculum Vitae</h3>
             <span class="contact-channel__detail">resume.pdf (Latest Build)</span>
             <span class="contact-channel__action">Download document ↗</span>
@@ -821,23 +781,23 @@
     <div class="container">
       <div class="footer-colophon">
         <div class="colophon-block">
-          <h4>Hosting &amp; Ingress</h4>
-          <p>Self-hosted on sovereign Proxmox VE hypervisor cluster. Served behind Cloudflare Zero Trust Tunnel (<code class="tech-tag">cloudflared</code>) with zero public router port forwarding.</p>
+          <h4>Hosting</h4>
+          <p>Static files on a single origin server behind Cloudflare, with TLS terminated at the edge. No application server, no database, no build pipeline.</p>
         </div>
 
         <div class="colophon-block">
-          <h4>Origin Web Engine</h4>
-          <p>Caddy HTTP/3 server with automated TLS certificate management, precompressed Zstandard/Gzip assets, and strict security headers.</p>
+          <h4>Origin</h4>
+          <p>Caddy with automatic certificate management, precompressed Zstandard and Gzip assets, and strict security headers set at the origin.</p>
         </div>
 
         <div class="colophon-block">
-          <h4>Frontend Standards</h4>
-          <p>Engineered with zero client-side tracking, zero third-party telemetry, fluid CSS design tokens, and lightweight vanilla ES2024.</p>
+          <h4>Frontend</h4>
+          <p>Hand-written HTML and CSS with fluid design tokens and roughly 150 lines of vanilla JavaScript. Typefaces are self-hosted, so the page makes no third-party request and sets no cookies.</p>
         </div>
 
         <div class="colophon-block">
-          <h4>Identity Migration</h4>
-          <p>Canonical domain: <code class="tech-tag">zeshannasir.com</code>. Legacy traffic from <code class="tech-tag">zeshans.dev</code> permanently 301 redirected at Cloudflare Edge.</p>
+          <h4>Domains</h4>
+          <p>This site is being prepared to move from <code class="tech-tag">zeshans.dev</code> to <code class="tech-tag">zeshannasir.com</code>. The move has not happened yet, and the migration plan is published in this repository.</p>
         </div>
       </div>
 

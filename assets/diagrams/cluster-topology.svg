@@ -7,7 +7,7 @@
       .bg-highlight { fill: #0b0d11; stroke: #14b8a6; }
       .txt-primary { fill: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
       .txt-secondary { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
-      .txt-muted { fill: #64748b; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; }
+      .txt-muted { fill: #8896ab; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; }
       .txt-teal { fill: #14b8a6; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; font-weight: 600; }
       .txt-green { fill: #10b981; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; font-weight: 600; }
       .badge-bg { fill: rgba(20, 184, 166, 0.12); stroke: #14b8a6; }
@@ -23,106 +23,106 @@
 
   <!-- Top Ribbon / Network Legend -->
   <g transform="translate(32, 28)">
-    <text x="0" y="14" class="txt-primary" font-size="14" font-weight="600" letter-spacing="0.05em">OMEGA SOVEREIGN TOPOLOGY</text>
-    <text x="0" y="32" class="txt-muted" font-size="11">SUBNET: 192.168.20.0/24 · ENCRYPTED MESH: TAILSCALE · QUORATE (2+1)</text>
+    <text x="0" y="14" class="txt-primary" font-size="14" font-weight="600" letter-spacing="0.05em">SOVEREIGN ARCHITECTURE TOPOLOGY</text>
+    <text x="0" y="32" class="txt-muted" font-size="11">PRIVATE INFRASTRUCTURE · ENCRYPTED LOCAL FABRIC · HIGH AVAILABILITY</text>
     <rect x="750" y="2" width="146" height="26" rx="4" class="badge-bg" stroke-width="1"/>
     <circle cx="766" cy="15" r="4" fill="#10b981"/>
-    <text x="778" y="19" class="txt-teal" font-size="11">QUORUM ACTIVE</text>
+    <text x="778" y="19" class="txt-teal" font-size="11">HA CLUSTER</text>
   </g>
 
-  <!-- Node 1: ms02 / ms-ultra-02 (AI Workhorse) -->
+  <!-- Node B: AI Workhorse Hypervisor -->
   <g transform="translate(32, 80)">
     <rect width="424" height="280" rx="8" class="bg-card" stroke-width="1" filter="url(#box-shadow)"/>
     
     <!-- Node Header -->
     <path d="M 0 8 Q 0 0 8 0 L 416 0 Q 424 0 424 8 L 424 38 L 0 38 Z" class="bg-header"/>
     <rect x="14" y="12" width="10" height="14" rx="2" fill="#14b8a6"/>
-    <text x="32" y="24" class="txt-primary" font-size="13" font-weight="600">ms02 · AI Workhorse Hypervisor</text>
-    <text x="315" y="24" class="txt-muted" font-size="11">192.168.20.20</text>
+    <text x="32" y="24" class="txt-primary" font-size="13" font-weight="600">NODE B · AI Workhorse Hypervisor</text>
+    <text x="315" y="24" class="txt-muted" font-size="11">node B</text>
     <line x1="0" y1="38" x2="424" y2="38" class="line-divider"/>
 
-    <!-- Containers inside ms02 -->
-    <!-- CT 401 -->
+    <!-- Containers inside NODE B -->
+    <!-- inference -->
     <g transform="translate(16, 50)">
       <rect width="188" height="96" rx="6" class="bg-highlight" stroke-width="1.5"/>
-      <text x="12" y="22" class="txt-teal" font-size="11">CT 401 · ai-core</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">ik_llama.cpp :8080</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Qwen3.6-35B · 128K Ctx</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">P-Cores 0-5 · mlock ON</text>
+      <text x="12" y="22" class="txt-teal" font-size="11">INFERENCE NODE</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Local LLM serving</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">Long-context, model-replaceable</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Pinned cores · resident memory locked</text>
     </g>
 
-    <!-- CT 402 -->
+    <!-- vector memory -->
     <g transform="translate(220, 50)">
       <rect width="188" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">CT 402 · ai-mem</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">VECTOR MEMORY</text>
       <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Qdrant Vector DB</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">gRPC / REST :6333-35</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">gRPC / REST API</text>
       <text x="12" y="78" class="txt-muted" font-size="10">API-Key Auth · Embed API</text>
     </g>
 
-    <!-- CT 403 -->
+    <!-- automation -->
     <g transform="translate(16, 160)">
       <rect width="188" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">CT 403 · ai-flow</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">AUTOMATION</text>
       <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">n8n Automation Engine</text>
       <text x="12" y="60" class="txt-secondary" font-size="11">Paperless-ngx + SearXNG</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Ports: 5678, 8000, 8085</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Segmented Application Runtimes</text>
     </g>
 
-    <!-- CT 404 / 406 -->
+    <!-- observability and agent -->
     <g transform="translate(220, 160)">
       <rect width="188" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">CT 404 / 406 · ai-obs/ops</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">OBSERVABILITY + AGENT</text>
       <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Grafana &amp; Prometheus</text>
       <text x="12" y="60" class="txt-secondary" font-size="11">Hermes Sovereign Agent</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Vaultwarden :8082</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Vaultwarden </text>
     </g>
   </g>
 
-  <!-- Node 2: hp260 / omega (Master & Homelab Hub) -->
+  <!-- Node A: Proxmox Master & Homelab Hub -->
   <g transform="translate(480, 80)">
     <rect width="448" height="280" rx="8" class="bg-card" stroke-width="1" filter="url(#box-shadow)"/>
     
     <!-- Node Header -->
     <path d="M 0 8 Q 0 0 8 0 L 440 0 Q 448 0 448 8 L 448 38 L 0 38 Z" class="bg-header"/>
     <rect x="14" y="12" width="10" height="14" rx="2" fill="#14b8a6"/>
-    <text x="32" y="24" class="txt-primary" font-size="13" font-weight="600">hp260 · Proxmox Master &amp; Homelab Hub</text>
-    <text x="345" y="24" class="txt-muted" font-size="11">192.168.20.11</text>
+    <text x="32" y="24" class="txt-primary" font-size="13" font-weight="600">NODE A · Proxmox Master &amp; Homelab Hub</text>
+    <text x="345" y="24" class="txt-muted" font-size="11">node A</text>
     <line x1="0" y1="38" x2="448" y2="38" class="line-divider"/>
 
-    <!-- Containers inside hp260 -->
-    <!-- CT 301 -->
+    <!-- Containers inside NODE A -->
+    <!-- edge and services -->
     <g transform="translate(16, 50)">
       <rect width="200" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">CT 301 · svc-ct-01</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">EDGE + SERVICES</text>
       <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Homelab Edge Hub</text>
       <text x="12" y="60" class="txt-secondary" font-size="11">Homepage · DocuSeal · Wallos</text>
       <text x="12" y="78" class="txt-muted" font-size="10">Dockge · IT-Tools · Actual</text>
     </g>
 
-    <!-- Cloudflare Ingress Gateway -->
+    <!-- Edge VPS Origin (verified architecture) -->
     <g transform="translate(232, 50)">
       <rect width="200" height="96" rx="6" class="bg-highlight" stroke-width="1.5"/>
-      <text x="12" y="22" class="txt-teal" font-size="11">Cloudflare Ingress</text>
+      <text x="12" y="22" class="txt-teal" font-size="11">EDGE ORIGIN (VPS)</text>
       <text x="12" y="42" class="txt-primary" font-size="12" font-weight="600">zeshannasir.com</text>
-      <text x="12" y="60" class="txt-secondary" font-size="11">Caddy HTTP/3 :8080</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Zero Port-Forward · TLS 1.3</text>
+      <text x="12" y="60" class="txt-secondary" font-size="11">Caddy HTTP/3 · Static Files</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Cloudflare Proxy · TLS 1.3</text>
     </g>
 
-    <!-- CT 201 & Uptime -->
+    <!-- engineering and uptime -->
     <g transform="translate(16, 160)">
       <rect width="200" height="96" rx="6" class="bg-inner"/>
-      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">CT 201 · dev-ct-01</text>
+      <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">ENGINEERING</text>
       <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Live Service Relay</text>
       <text x="12" y="60" class="txt-secondary" font-size="11">Ntfy · Miniflux · Memos</text>
-      <text x="12" y="78" class="txt-muted" font-size="10">Code-Server :8443</text>
+      <text x="12" y="78" class="txt-muted" font-size="10">Code-Server </text>
     </g>
 
     <!-- Operational State -->
     <g transform="translate(232, 160)">
       <rect width="200" height="96" rx="6" class="bg-inner"/>
       <text x="12" y="22" class="txt-muted" font-size="11" font-weight="600">Status &amp; Verification</text>
-      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Uptime Kuma :3001</text>
+      <text x="12" y="42" class="txt-primary" font-size="12" font-weight="500">Uptime Kuma </text>
       <text x="12" y="60" class="txt-secondary" font-size="11">Proxmox Backup Server</text>
       <text x="12" y="78" class="txt-muted" font-size="10">Deduplicated Nightly Drills</text>
     </g>
@@ -133,22 +133,22 @@
     <!-- OPNsense Gateway -->
     <rect x="0" y="0" width="280" height="104" rx="8" class="bg-card"/>
     <text x="16" y="26" class="txt-primary" font-size="13" font-weight="600">Perimeter Gateway / Firewall</text>
-    <text x="16" y="46" class="txt-secondary" font-size="11">OPNsense · 192.168.20.1</text>
-    <text x="16" y="68" class="txt-muted" font-size="11">VLAN Segmentation · WireGuard</text>
-    <text x="16" y="88" class="txt-teal" font-size="10">Subnets: .2 / .4 / .20 / .30</text>
+    <text x="16" y="46" class="txt-secondary" font-size="11">Firewall &amp; Intrusion Prevention</text>
+    <text x="16" y="68" class="txt-muted" font-size="11">Segmented VLANs · WireGuard VPN</text>
+    <text x="16" y="88" class="txt-teal" font-size="10">Isolated Management &amp; Compute</text>
 
     <!-- Corosync External Quorum Witness (VPS) -->
     <rect x="300" y="0" width="344" height="104" rx="8" class="bg-highlight" stroke-width="1.5"/>
     <text x="316" y="26" class="txt-teal" font-size="13">External Quorum Witness (QDevice)</text>
-    <text x="316" y="46" class="txt-primary" font-size="11" font-weight="600">VPS Relay · 100.84.144.24</text>
+    <text x="316" y="46" class="txt-primary" font-size="11" font-weight="600">Off-site Cloud Quorum Witness (VPS)</text>
     <text x="316" y="68" class="txt-secondary" font-size="11">Independent Failure Domain · 3rd Vote</text>
     <text x="316" y="88" class="txt-green" font-size="10">Zero Split-Brain on Hypervisor Reboot</text>
 
     <!-- Cloudflare Edge Box -->
     <rect x="664" y="0" width="232" height="104" rx="8" class="bg-card"/>
-    <text x="680" y="26" class="txt-primary" font-size="13" font-weight="600">Cloudflare Zero Trust Edge</text>
+    <text x="680" y="26" class="txt-primary" font-size="13" font-weight="600">Cloudflare Edge Security</text>
     <text x="680" y="46" class="txt-secondary" font-size="11">Full (Strict) TLS 1.3 · Anycast</text>
-    <text x="680" y="68" class="txt-muted" font-size="11">Argo Tunnel · DDoS Protection</text>
-    <text x="680" y="88" class="txt-teal" font-size="10">Permanent 301 from legacy</text>
+    <text x="680" y="68" class="txt-muted" font-size="11">Authenticated Origin · DDoS Defense</text>
+    <text x="680" y="88" class="txt-teal" font-size="10">Edge Routing &amp; Security Rules</text>
   </g>
 </svg>

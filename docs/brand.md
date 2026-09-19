@@ -15,10 +15,10 @@ In the era of autonomous agents and generative AI, the bottleneck to enterprise 
 Zeshan Nasir is not a generic IT administrator or a trend-chasing AI wrapper developer. He is an authoritative, high-trust systems operator who bridges **enterprise-grade endpoint & identity governance** with **sovereign, self-hosted AI infrastructure**. 
 
 He engineers the unsexy, mission-critical substrates:
-1. **Governed Data & Documentation**: Transforming corporate wikis into certified ground-truth contracts for LLMs and autonomous agents.
-2. **Predictable Automation Pipelines**: Connecting enterprise platforms (Confluence, Jira, Workato, n8n) with strict idempotency and validation gates.
-3. **Hardened Identity & Endpoint Foundations**: Securing global device fleets (Intune, Jamf Pro) and identity planes (Entra ID, M365) to ISO 27001 / GDPR audit standards.
-4. **Sovereign Infrastructure & Local AI**: Operating private multi-node hypervisors (Proxmox, Tailscale, Qdrant, llama.cpp) where models run under hermetic operational control.
+1. **Governed Data & Documentation**: Transforming corporate wikis into verified ground-truth contracts for LLMs and autonomous agents.
+2. **Predictable Automation Pipelines**: Connecting enterprise platforms (knowledge workspaces, ticketing systems, workflow engines, n8n) with strict idempotency and validation gates.
+3. **Hardened Identity & Endpoint Foundations**: Securing global device fleets (Intune, Jamf Pro) and identity planes (Entra ID, M365) to rigorous enterprise compliance and audit baselines.
+4. **Sovereign Infrastructure & Local AI**: Running private multi-node hypervisors (Proxmox, Tailscale, Qdrant, llama.cpp) where models run under hermetic operational control.
 
 ---
 
@@ -36,7 +36,7 @@ He engineers the unsexy, mission-critical substrates:
 
 ### Pillar 1: Input Layer Supremacy
 - **Truth**: AI models fail on inputs before they fail on weights.
-- **Action**: Enforce documentation contracts, metadata schemas, expiration dates, and owner verification on Confluence and company knowledge hubs. If documentation is stale, it is pruned or flagged before RAG ingest.
+- **Action**: Enforce documentation contracts, metadata schemas, expiration dates, and owner verification across corporate knowledge repositories. If documentation is stale, it is pruned or flagged before RAG ingest.
 
 ### Pillar 2: Documentation as Infrastructure
 - **Truth**: Undocumented systems cannot be safely automated. Stale docs are technical debt with compound interest.
@@ -56,7 +56,7 @@ He engineers the unsexy, mission-critical substrates:
 
 ### Tone Attributes
 - **Calm**: No sensationalism, exclamation marks, or breathless AI excitement.
-- **Precise**: Uses specific metrics (128K context, $p_{99}$ latency, 192.168.20.0/24 subnet, Corosync votes) instead of vague claims ("blazing fast").
+- **Precise**: Uses specific metrics (128K context, $p_{99}$ latency, segmented VLANs, Corosync votes) instead of vague claims ("blazing fast").
 - **Pragmatic**: Prioritizes reliability, reversibility, and maintainability over the newest bleeding-edge framework.
 - **Authoritative**: Speaks from 14+ years of real incident triage, production outages, and fleet scaling.
 

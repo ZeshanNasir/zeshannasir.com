@@ -1,92 +1,49 @@
-# zeshannasir.com — Personal Brand & Sovereign Systems Platform
+# zeshannasir.com
 
-> **"I build the reliability layer AI depends on."**
+Source for the personal site of **Zeshan Nasir** — system administrator in Stockholm,
+working on infrastructure reliability, enterprise knowledge governance and self-hosted AI.
 
-This repository contains the complete production source code, design token system, documentation case studies, and deployment automation configurations for [zeshannasir.com](https://zeshannasir.com) — the personal brand and engineering portfolio of **Zeshan Nasir**.
+> **Status: prepared, not live.**
+> The site currently served at `zeshans.dev` is built from a different repository
+> (`~/portfolio`). This repository holds the rebuilt site and the migration plan that
+> moves the identity to `zeshannasir.com`. That cutover has **not** been performed:
+> `zeshannasir.com` has no DNS records yet.
 
----
+## Architecture
 
-## 🏛️ Architecture Overview
+- Static HTML, CSS and ~150 lines of vanilla JavaScript. No framework, no build step,
+  no dependencies, no lockfile.
+- Self-hosted variable fonts. Zero third-party requests at runtime, zero cookies,
+  zero analytics.
+- Intended origin: Caddy on the existing edge VPS, in its own server block with its own
+  web root, behind Cloudflare. See `docs/deployment.md`.
 
-- **Primary Canonical Domain:** `zeshannasir.com` (Cloudflare Registrar, 5–10 year term)
-- **Legacy Migration:** `zeshans.dev` (301 Moved Permanently at Cloudflare Edge)
-- **Edge Routing:** Cloudflare Zero Trust Tunnel (`cloudflared`) with Full (Strict) TLS 1.3
-- **Origin Server:** Caddy HTTP/3 static web engine (self-hosted inside the sovereign OMEGA Proxmox cluster)
-- **Frontend Architecture:** 100% static HTML5, fluid design tokens in native CSS, lightweight vanilla ES2024 (zero tracking, zero heavy frameworks, sub-100ms first contentful paint).
-
----
-
-## 📁 Repository Structure
+## Layout
 
 ```
-personal-site/
-├── index.html                   # Master production entrypoint
-├── 404.html                     # Custom styled 404 error page
-├── favicon.svg                  # Minimal architectural monogram (ZN)
-├── robots.txt                   # Web crawler directives
-├── sitemap.xml                  # Canonical XML sitemap
-├── llms.txt                     # Ground truth file for LLMs & AI search
-├── resume.pdf                   # Latest curriculum vitae
-│
-├── assets/
-│   ├── diagrams/
-│   │   ├── cluster-topology.svg # OMEGA 2-node + QDevice hypervisor map
-│   │   └── knowledge-pipeline.svg # Confluence/Workato lifecycle engine
-│   ├── icons/                   # Vector marks & icons
-│   └── images/                  # Media & social preview graphics
-│
-├── css/
-│   ├── tokens.css               # Design tokens (colors, fluid type, spacing)
-│   ├── base.css                 # CSS reset, accessibility skip links, typography
-│   └── components.css           # Bento cards, telemetry, ADRs, buttons, toast
-│
-├── js/
-│   └── main.js                  # Theme switcher, scroll spy, clipboard toast
-│
-├── content/
-│   ├── work/
-│   │   ├── knowledge-governance.md # Deep case study: Knowledge lifecycle
-│   │   ├── hermes-agent.md         # Deep case study: Hermes ops agent
-│   │   └── omega-cluster.md        # Deep case study: Sovereign OMEGA cluster
-│   ├── career.md                # Full 14-year professional experience record
-│   └── contact.md               # Direct contact protocol & colophon
-│
-├── config/
-│   ├── cloudflared/
-│   │   └── tunnel.yml           # Cloudflare Tunnel ingress configuration
-│   ├── caddy/
-│   │   └── Caddyfile            # Caddy HTTP/3 origin server configuration
-│   └── systemd/
-│       └── cloudflared.service  # Systemd daemon unit file
-│
-└── docs/
-    ├── brand.md                 # Brand positioning & messaging framework
-    ├── design-system.md         # Design system & visual specification
-    └── deployment.md            # Cloudflare Registrar, DNS, Tunnel & 301 guide
+index.html              the site — a single page
+404.html                error page
+css/                    tokens.css, base.css, components.css
+js/main.js              theme toggle, scroll spy, clipboard copy
+assets/fonts/           self-hosted woff2 + SIL OFL licences
+assets/diagrams/        two hand-authored SVG diagrams
+assets/images/og.png    social card, 1200x630
+docs/deployment.md      origin, edge and DNS plan (not applied)
+docs/migration.md       zeshans.dev -> zeshannasir.com URL map and cutover
+docs/brand.md           positioning and voice
+docs/design-system.md   tokens, type scale, layout rules
+docs/AI/                the Pass A implementation contract
+docs/qa/                rendered QA screenshots — evidence, never deployed
+docs/source-content/    long-form drafting source; the site itself is index.html
 ```
 
----
+## Preview
 
-## 🚀 Local Development & Preview
-
-To preview locally with zero external dependencies:
-
-```bash
-# Using Python's built-in HTTP server:
-python3 -m http.server 8080
-
-# Then open in your browser:
-open http://localhost:8080
+```sh
+python3 -m http.server 8000     # http://127.0.0.1:8000
 ```
 
----
+## What is deliberately not in this repository or on the site
 
-## 🔒 Security & Privacy Posture
-- **Zero Third-Party Trackers:** No analytics scripts, no tracking cookies, no external pixel beacons.
-- **Strict Headers:** HSTS preloaded (`max-age=63072000`), `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`.
-- **Zero Public Router Ports:** Routed entirely through an outbound encrypted Cloudflare Tunnel.
-
----
-
-## 📄 License
-© 2026 Zeshan Nasir. All rights reserved.
+Employer-internal metrics and audit outcomes, private network addresses, host names,
+container identifiers, service ports, and resident model names.

@@ -26,3 +26,11 @@ tunnel.json
 # Temporary artifacts
 tmp/
 scratch/
+
+# Source content contains private infrastructure details (IPs, container IDs)
+# not suitable for public repositories. Keep locally, exclude from Git.
+docs/source-content/
+
+# Config templates contain private IPs and a rejected Cloudflare Tunnel architecture.
+# Keep locally for reference, exclude from Git.
+config/

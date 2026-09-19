@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Prepared for the zeshannasir.com cutover. Not yet live: the canonical host
+     is still zeshans.dev until the migration in docs/migration.md is executed. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zeshannasir.com/</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-09-19</lastmod>
   </url>
   <url>
     <loc>https://zeshannasir.com/resume.pdf</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://zeshannasir.com/llms.txt</loc>
+    <lastmod>2026-09-19</lastmod>
   </url>
 </urlset>

@@ -83,35 +83,6 @@
   gap: var(--space-sm);
 }
 
-/* Status Beacon */
-.status-beacon {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.25rem 0.65rem;
-  background-color: var(--accent-teal-subtle);
-  border: 1px solid var(--border-active);
-  border-radius: var(--radius-pill);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--accent-teal);
-  font-weight: var(--weight-medium);
-}
-
-.status-beacon__dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: var(--accent-emerald);
-  box-shadow: 0 0 6px var(--accent-emerald);
-  animation: pulse-beacon 2.4s infinite ease-in-out;
-}
-
-@keyframes pulse-beacon {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.85); }
-}
-
 /* Theme Toggle Button */
 .theme-toggle {
   display: flex;
@@ -548,6 +519,14 @@
   line-height: 1.4;
 }
 
+.metrics-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  border-left: 2px solid var(--border-strong);
+  padding-left: var(--space-sm);
+}
+
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -608,13 +587,6 @@
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-}
-
-.telemetry-card__dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--accent-emerald);
 }
 
 .telemetry-card__val {
@@ -678,6 +650,16 @@
   text-align: left;
 }
 
+.services-table caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
 .services-table th {
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -692,6 +674,15 @@
   padding: var(--space-md) var(--space-lg);
   border-bottom: 1px solid var(--border-subtle);
   color: var(--text-secondary);
+}
+
+.services-table tbody th {
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: none;
+  background-color: transparent;
+  color: var(--text-primary);
+  vertical-align: top;
 }
 
 .services-table tr:last-child td {
@@ -717,7 +708,7 @@
 /* --- 7. ARCHITECTURAL DECISIONS (ADR) --- */
 .adr-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: var(--space-lg);
 }
 
@@ -804,6 +795,12 @@
   gap: var(--space-md);
 }
 
+@media (max-width: 480px) {
+  .career-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
 .career-stat {
   padding: var(--space-md);
   background-color: var(--bg-surface-raised);
@@ -887,6 +884,13 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--space-lg);
   margin-top: var(--space-2xl);
+}
+
+button.contact-channel {
+  font: inherit;
+  text-align: left;
+  width: 100%;
+  appearance: none;
 }
 
 .contact-channel {
@@ -1019,19 +1023,25 @@
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 960px) {
+  .manifesto-grid,
+  .system-grid,
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+
   .manifesto-card--large,
   .manifesto-card--medium {
-    grid-column: span 12;
+    grid-column: span 1;
   }
 
   .system-grid__content,
   .system-grid__sidebar {
-    grid-column: span 12;
+    grid-column: span 1;
   }
 
   .career-summary,
   .career-timeline {
-    grid-column: span 12;
+    grid-column: span 1;
   }
 
   .career-timeline {
@@ -1066,8 +1076,41 @@
   .mobile-toggle {
     display: block;
   }
+}
 
-  .status-beacon {
-    display: none;
-  }
+/* ==============================================================================
+   404 PAGE — moved out of an inline <style> block so the Content-Security-Policy
+   can drop 'unsafe-inline' from style-src.
+   ============================================================================== */
+
+.error-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-xl) var(--container-pad);
+}
+
+.error-box {
+  max-width: 540px;
+  padding: var(--space-2xl);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.error-code {
+  font-family: var(--font-mono);
+  font-size: 3.5rem;
+  font-weight: var(--weight-bold);
+  color: var(--accent-teal);
+  line-height: 1;
+  margin-bottom: var(--space-md);
+}
+
+.error-text {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xl);
 }

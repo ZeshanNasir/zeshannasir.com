@@ -2,6 +2,24 @@
    BASE & RESET STYLES - zeshannasir.com
    ============================================================================== */
 
+/* Self-hosted variable fonts. No third-party request is made for typography,
+   which is what lets the page claim zero third-party telemetry truthfully. */
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter-var.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../assets/fonts/jetbrains-mono-var.woff2') format('woff2-variations');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +44,6 @@ body {
   flex-direction: column;
   background-color: var(--bg-canvas);
   color: var(--text-primary);
-  overflow-x: hidden;
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 

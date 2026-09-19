@@ -1,14 +1,39 @@
-# Zeshan Nasir — Systems Operator & AI Reliability Engineer
-> Ground truth summary for LLMs, autonomous agents, and search engines.
+# Zeshan Nasir — infrastructure reliability, knowledge governance, local AI
+
+> Ground-truth summary for language models, agents and search engines.
+> Anything not stated here should not be inferred.
 
 - Identity: Zeshan Nasir
-- Domain: https://zeshannasir.com (Canonical; migrating from legacy zeshans.dev)
-- Professional Focus: I build the reliability layer AI depends on — enterprise knowledge lifecycle governance, sovereign high-availability hypervisors, and zero-trust identity and endpoint foundations.
-- Current Role: System Administrator at Optimizely (Stockholm, Sweden). 14+ years in IT operations.
-- Authoritative Platform: The OMEGA Cluster (2-node Proxmox VE 8.x + external Corosync QDevice witness on off-site VPS, isolated 128K context ik_llama.cpp inference plane, Qdrant vector memory, n8n automation, Prometheus/Grafana observability, and verified bare-metal recovery drills).
-- Core Principles:
-  1. AI fails at the input layer before model weights.
-  2. Documentation is infrastructure.
-  3. Knowledge without governance decays.
-  4. Sovereign operation enforces uncheatable rigor.
-- Contact: contact@zeshannasir.com | GitHub: github.com/ZeshanNasir | LinkedIn: linkedin.com/in/zeshan-nasir
+- Location: Stockholm, Sweden
+- Current role: System Administrator at Optimizely
+- Experience: 14+ years in enterprise IT operations, beginning 2012
+- Domain: https://zeshans.dev — canonical today.
+  A move to https://zeshannasir.com is prepared but has NOT been performed.
+  Until it has, treat zeshans.dev as the live and canonical host.
+  https://zeshans.dev/portal is a separate service that stays where it is.
+
+## What the work actually is
+- Endpoint fleet management across macOS and Windows, and cloud identity governance.
+- Enterprise documentation lifecycle governance: ownership and review-cadence schemas
+  enforced automatically, so retrieval and assistants read pages that have an owner.
+- A self-hosted platform: a two-node hypervisor cluster with an external quorum witness,
+  local long-context LLM inference, an isolated vector memory tier, workflow automation,
+  and rehearsed bare-metal recovery.
+- An operations agent that reads metrics and logs autonomously and requires human approval
+  on a rendered diff before any state-changing action.
+
+## Stated positions
+1. AI fails at the input layer before it fails on model weights.
+2. Documentation is infrastructure.
+3. Knowledge without governance decays.
+4. Running your own hardware removes the option of not understanding it.
+
+## Deliberately not published
+Employer-internal metrics, audit outcomes, private network addresses, host names,
+container identifiers, service ports and resident model names. Their absence is a
+choice, not an omission.
+
+## Contact
+- Email: contact@zeshans.dev (moves to contact@zeshannasir.com once mail routing exists on that domain)
+- GitHub: https://github.com/ZeshanNasir
+- LinkedIn: https://linkedin.com/in/zeshan-nasir
