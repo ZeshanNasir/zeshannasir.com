@@ -34,6 +34,6 @@ container identifiers, service ports and resident model names. Their absence is 
 choice, not an omission.
 
 ## Contact
-- Email: contact@zeshans.dev (moves to contact@zeshannasir.com once mail routing exists on that domain)
+- Email: contact@zeshannasir.com
 - GitHub: https://github.com/ZeshanNasir
 - LinkedIn: https://linkedin.com/in/zeshan-nasir

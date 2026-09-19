@@ -490,7 +490,7 @@ No test may be deleted or weakened to make a run pass.
 | R7 | `immutable` caching on unhashed filenames pins a stale stylesheet for a year | Medium | Section 15.2 note. Reduce `max-age` |
 | R8 | `zeshannasir.com` cannot be verified at the public edge before cutover, so Pass B and C evidence is local only | Medium | State it. Do not present a lab number as a field number |
 | R9 | The Cisco Umbrella resolver on this workstation intercepts `zeshannasir.com` and returns a block page | Medium | Always verify from the VPS or an external DoH resolver. Never from the workstation resolver alone |
-| R10 | `contact@zeshannasir.com` is published but no MX record exists for the domain | High | D3 |
+| R10 | `contact@zeshannasir.com` is published but no MX record exists for the domain | High | **Resolved**: Cloudflare Email Routing active with live MX and SPF records, verified via SMTP probe |
 | R11 | Three trees for one site invite editing the wrong one | Medium | `CLAUDE.md` boundary table. Consider deleting `~/Desktop/personal-site` once confirmed redundant |
 | R12 | This repository has no remote, so six commits of work exist on one machine only | Medium | Founder decision D4 |
 
@@ -502,7 +502,7 @@ No test may be deleted or weakened to make a run pass.
 | --- | --- | --- |
 | **D1** | **Employer clearance** for the metrics in X7 and X8, or acceptance of qualitative restatement | The three case-study sidebars and the career statistics |
 | **D2** | **Orphan content**: promote `content/**` to real routes, or move it under `docs/` | Section 4 resolution |
-| **D3** | **Contact address.** `zeshannasir.com` has no MX record. Options: enable Cloudflare Email Routing before cutover (a production change, not permitted in these passes); keep `contact@zeshans.dev` until routing exists; or publish LinkedIn as the primary route | The contact section, `llms.txt`, `content/contact.md`, and the SPF record in section 15.1 |
+| **D3** | **Contact address.** `zeshannasir.com` has no MX record. | **Resolved**: Cloudflare Email Routing active (`contact@` and `me@` route to `zeshan.sudo@gmail.com`). Public MX/SPF verified. |
 | **D4** | **Remote for this repository.** Six commits exist only on this machine. Push to a new private GitHub repository, to the Gitea instance, or accept local-only | Nothing in Pass B; a durability decision |
 | **D5** | **Fate of `~/portfolio` after cutover.** Archive the GitHub repository, disable the deploy workflow, or keep it as the `/portal`-era artefact | Post-migration housekeeping. The workflow must at minimum be disabled, or a future push will overwrite `/var/www/portfolio` while the redirect is live |
 | **D6** | **One job title**, for `<title>`, JSON-LD, `llms.txt`, `career.md` and `resume.pdf` | X14 |
