@@ -36,7 +36,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=3">
 
   <!-- Schema.org Verified Person Metadata -->
   <script type="application/ld+json">
@@ -312,6 +312,26 @@
             <div class="system-diagram-wrap" title="Knowledge Lifecycle Architecture">
               <svg role="img" aria-label="Knowledge lifecycle governance pipeline diagram" xmlns="http://www.w3.org/2000/svg" viewBox="32 18 896 338" width="100%" height="100%" fill="none" class="pipeline-diagram">
   <defs>
+    <style>
+      .pipeline-diagram .bg-card { fill: #11151c; stroke: rgba(255, 255, 255, 0.12); }
+      .pipeline-diagram .bg-inner { fill: #0b0d11; stroke: rgba(255, 255, 255, 0.08); }
+      .pipeline-diagram .txt-primary { fill: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
+      .pipeline-diagram .txt-secondary { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
+      .pipeline-diagram .txt-muted { fill: #8896ab; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; }
+      .pipeline-diagram .txt-teal { fill: #14b8a6; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; font-weight: 600; }
+      .pipeline-diagram .txt-green { fill: #10b981; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; font-weight: 600; }
+      .pipeline-diagram .txt-amber { fill: #f59e0b; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; font-weight: 600; }
+
+      [data-theme="light"] .pipeline-diagram .bg-card { fill: #ffffff; stroke: rgba(0, 0, 0, 0.12); }
+      [data-theme="light"] .pipeline-diagram .bg-inner { fill: #f1f5f9; stroke: rgba(0, 0, 0, 0.08); }
+      [data-theme="light"] .pipeline-diagram .txt-primary { fill: #0f172a; }
+      [data-theme="light"] .pipeline-diagram .txt-secondary { fill: #475569; }
+      [data-theme="light"] .pipeline-diagram .txt-muted { fill: #64748b; }
+      [data-theme="light"] .pipeline-diagram .txt-teal { fill: #0d9488; }
+      [data-theme="light"] .pipeline-diagram .txt-green { fill: #059669; }
+      [data-theme="light"] .pipeline-diagram .txt-amber { fill: #d97706; }
+    </style>
+
     <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 1 L 8 5 L 0 9 z" fill="#14b8a6"/>
     </marker>
@@ -587,6 +607,32 @@
           </div>
           <svg role="img" aria-label="Platform topology by role diagram" xmlns="http://www.w3.org/2000/svg" viewBox="32 20 896 476" width="100%" height="100%" fill="none" class="cluster-diagram">
   <defs>
+    <style>
+      .cluster-diagram .bg-card { fill: #11151c; stroke: rgba(255, 255, 255, 0.12); }
+      .cluster-diagram .bg-header { fill: #171d26; }
+      .cluster-diagram .bg-inner { fill: #0b0d11; stroke: rgba(255, 255, 255, 0.08); }
+      .cluster-diagram .bg-highlight { fill: #0b0d11; stroke: #14b8a6; }
+      .cluster-diagram .txt-primary { fill: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
+      .cluster-diagram .txt-secondary { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
+      .cluster-diagram .txt-muted { fill: #8896ab; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; }
+      .cluster-diagram .txt-teal { fill: #14b8a6; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; font-weight: 600; }
+      .cluster-diagram .txt-green { fill: #10b981; font-family: "JetBrains Mono", "IBM Plex Mono", monospace; font-weight: 600; }
+      .cluster-diagram .badge-bg { fill: rgba(20, 184, 166, 0.12); stroke: #14b8a6; }
+      .cluster-diagram .line-divider { stroke: rgba(255, 255, 255, 0.08); }
+
+      [data-theme="light"] .cluster-diagram .bg-card { fill: #ffffff; stroke: rgba(0, 0, 0, 0.12); }
+      [data-theme="light"] .cluster-diagram .bg-header { fill: #f8fafc; }
+      [data-theme="light"] .cluster-diagram .bg-inner { fill: #f1f5f9; stroke: rgba(0, 0, 0, 0.08); }
+      [data-theme="light"] .cluster-diagram .bg-highlight { fill: #f0fdfa; stroke: #0d9488; }
+      [data-theme="light"] .cluster-diagram .txt-primary { fill: #0f172a; }
+      [data-theme="light"] .cluster-diagram .txt-secondary { fill: #475569; }
+      [data-theme="light"] .cluster-diagram .txt-muted { fill: #64748b; }
+      [data-theme="light"] .cluster-diagram .txt-teal { fill: #0d9488; }
+      [data-theme="light"] .cluster-diagram .txt-green { fill: #059669; }
+      [data-theme="light"] .cluster-diagram .badge-bg { fill: rgba(13, 148, 136, 0.08); stroke: #0d9488; }
+      [data-theme="light"] .cluster-diagram .line-divider { stroke: rgba(0, 0, 0, 0.08); }
+    </style>
+
     <filter id="box-shadow" x="-3%" y="-3%" width="106%" height="110%">
       <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
     </filter>
