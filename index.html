@@ -20,6 +20,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zeshannasir.com/">
   <meta property="og:image" content="https://zeshannasir.com/assets/images/og.png">
+  <meta property="og:site_name" content="Zeshan Nasir">
+  <meta property="og:locale" content="en_US">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -34,9 +36,9 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css?v=3">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
 
   <!-- Schema.org Verified Person Metadata -->
   <script type="application/ld+json">
@@ -69,7 +71,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="/" class="site-brand" aria-label="Zeshan Nasir">
-        <svg class="site-brand__mark" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="site-brand__mark" aria-hidden="true" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="128" height="128" rx="28" fill="#11151c"/>
           <rect x="2" y="2" width="124" height="124" rx="26" stroke="#14b8a6" stroke-width="2" stroke-opacity="0.4"/>
           <path d="M 34 40 L 62 40 L 34 76 L 62 76" stroke="#f1f5f9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -95,12 +97,12 @@
       <!-- Header Controls -->
       <div class="header-actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme (Shortcut: T)" title="Toggle Theme (T)">
-          <svg class="theme-icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg class="theme-icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
 
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
     </div>
@@ -153,7 +155,7 @@
             <div class="hero-actions">
               <a href="#work" class="btn btn--primary">
                 <span>View Production Systems</span>
-                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
               <a href="#contact" class="btn btn--secondary">
                 <span>Direct Connection</span>
@@ -1075,6 +1077,6 @@
   <div class="toast" id="site-toast" role="alert" aria-live="polite"></div>
 
   <!-- Scripts -->
-  <script src="js/main.js" defer></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
