@@ -7,20 +7,17 @@
 - Location: Stockholm, Sweden
 - Current role: System Administrator at Optimizely
 - Experience: 14+ years in enterprise IT operations, beginning 2012
-- Domain: https://zeshans.dev — canonical today.
-  A move to https://zeshannasir.com is prepared but has NOT been performed.
-  Until it has, treat zeshans.dev as the live and canonical host.
-  https://zeshans.dev/portal is a separate service that stays where it is.
+- Domain: https://zeshannasir.com — canonical live host.
+  (https://zeshans.dev permanently redirects here; portal telemetry remains on zeshans.dev/portal)
 
 ## What the work actually is
 - Endpoint fleet management across macOS and Windows, and cloud identity governance.
 - Enterprise documentation lifecycle governance: ownership and review-cadence schemas
   enforced automatically, so retrieval and assistants read pages that have an owner.
-- A self-hosted platform: a two-node hypervisor cluster with an external quorum witness,
-  local long-context LLM inference, an isolated vector memory tier, workflow automation,
-  and rehearsed bare-metal recovery.
-- An operations agent that reads metrics and logs autonomously and requires human approval
-  on a rendered diff before any state-changing action.
+- A self-hosted platform: a two-node hypervisor cluster with an off-site cloud quorum witness,
+  CPU-optimized local LLM inference (ik_llama.cpp), workflow automation, and verified bare-metal recovery runbooks.
+- An operations agent (Hermes) that reads metrics and logs autonomously, operating over MCP,
+  with mandatory human approval on a rendered diff before any state-changing action.
 
 ## Stated positions
 1. AI fails at the input layer before it fails on model weights.
