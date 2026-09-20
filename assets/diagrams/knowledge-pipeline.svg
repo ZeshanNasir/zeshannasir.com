@@ -36,7 +36,7 @@
   <!-- Title -->
   <g transform="translate(32, 28)">
     <text x="0" y="14" class="txt-primary" font-size="14" font-weight="600" letter-spacing="0.05em">KNOWLEDGE LIFECYCLE GOVERNANCE PIPELINE</text>
-    <text x="0" y="32" class="txt-muted" font-size="11">KNOWLEDGE WORKSPACE ➔ AUTOMATION ENGINE ➔ GROUND-TRUTH RAG VALIDATION</text>
+    <text x="0" y="32" class="txt-muted" font-size="11">KNOWLEDGE WORKSPACE ➔ AUTOMATION ENGINE ➔ VERIFIED SEARCH INDEX</text>
   </g>
 
   <!-- Step 1: Enterprise Spaces -->
@@ -77,15 +77,15 @@
     <text x="16" y="124" class="txt-amber" font-size="11">⚠ Stale / Expired</text>
   </g>
 
-  <!-- Path A: Verified Current -> RAG Ground Truth -->
+  <!-- Path A: Verified Current -> Verified Search -->
   <path d="M 704 125 L 748 125" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-green)"/>
 
   <g transform="translate(756, 60)">
     <rect width="172" height="100" rx="8" class="bg-inner" stroke="#10b981" stroke-width="1.5"/>
-    <text x="14" y="24" class="txt-green" font-size="10">VERIFIED REPOSITORY</text>
-    <text x="14" y="46" class="txt-primary" font-size="13" font-weight="600">RAG Ground Truth</text>
-    <text x="14" y="68" class="txt-secondary" font-size="11">Enterprise Search &amp; RAG</text>
-    <text x="14" y="86" class="txt-teal" font-size="10">Zero-Hallucination Scope</text>
+    <text x="14" y="24" class="txt-green" font-size="10">VERIFIED CORPUS</text>
+    <text x="14" y="46" class="txt-primary" font-size="13" font-weight="600">Verified Knowledge</text>
+    <text x="14" y="68" class="txt-secondary" font-size="11">Search &amp; AI Assistants</text>
+    <text x="14" y="86" class="txt-teal" font-size="10">Actively Governed Data</text>
   </g>
 
   <!-- Path B: Stale -> Deprecation Pipeline -->
@@ -93,10 +93,10 @@
 
   <g transform="translate(756, 175)">
     <rect width="172" height="100" rx="8" class="bg-inner" stroke="#f59e0b" stroke-width="1.5"/>
-    <text x="14" y="24" class="txt-amber" font-size="10">TICKET AUTO-ESCALATION</text>
-    <text x="14" y="46" class="txt-primary" font-size="13" font-weight="600">Prune &amp; Quarantine</text>
+    <text x="14" y="24" class="txt-amber" font-size="10">PAGE QUARANTINE</text>
+    <text x="14" y="46" class="txt-primary" font-size="13" font-weight="600">Prune &amp; Archive</text>
     <text x="14" y="68" class="txt-secondary" font-size="11">Moved to Archive Space</text>
-    <text x="14" y="86" class="txt-muted" font-size="10">Tagged: NOINDEX</text>
+    <text x="14" y="86" class="txt-muted" font-size="10">Excluded from AI Index</text>
   </g>
 
   <!-- Bottom Metric Banner -->
